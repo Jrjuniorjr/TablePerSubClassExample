@@ -34,6 +34,10 @@ public class EmployerService {
 		 * Observação 5 - MUITO CUIDADO, esse tipo de strategy, coloca os atributos da subclasse not null.
 		 * É possivel alterar fazendo @Column(nullable=true) em cima do atributo desejado.
 		 */
+		
+		/*
+		 * Resumo dessa strategy: Separar as classes em varias tabelas.
+		 */
 		Employer employer = new SalariedEmployer();
 		
 		employer.setEmpNo(empNo);
